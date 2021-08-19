@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="background.css" />
+    <script src="game.js" defer type="module"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-143HXVGL14"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-143HXVGL14");
+    </script>
+  </head>
+  <body>
+    <div id="start">
+      <div>
+        <h1>RetroSnake🐍</h1>
+        <button id="start-button"><h2>START</h2></button>
+        <p>
+          velg hastighet<br /><button id="easy">Lett</button>
+          <button id="medium">Middels</button>
+          <button id="hard">Vanskelig</button>
+        </p>
+        <p id="rs">
+          <a href="https://rogersteinbakk.no">www.rogersteinbakk.no</a>
+        </p>
+      </div>
+    </div>
+    <div id="swipe-mobile">
+      <p>
+        Bruk piltaster ⬅️⬇️➡️⬆️ på laptop/pc 💻.<br /><br />Sveip 📲 på mobil.
+        <br /><br /><button>OK</button>
+      </p>
+      <img src="swipeit.svg" alt="" />
+    </div>
+    <div id="stars-container">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
+    <div id="gameboard"></div>
+    <div id="points">
+      <div><span id="score"></span> poeng</div>
+    </div>
+
+    <div id="game-over">
+      <h1>GAME OVER 😞</h1>
+      <p>Ikke gi opp👏👏👏</p>
+      <p></p>
+      <button id="start-over">Prøv igjen 😎</button>
+    </div>
+  </body>
+</html>
